@@ -1,0 +1,59 @@
+ table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      border:1px solid black;
+    }
+
+    .td1 {
+      border: 1px solid black;
+      text-align: left;
+      padding: 8px;
+      background-color: green;
+      color: white;
+    }
+    .td2{
+       
+      border: 1px solid black;
+      text-align: left;
+      padding: 8px;
+      background-color: red;
+      color: white;
+    }
+    .custom-card {
+      position: relative;
+      overflow: hidden;
+      transform-origin: center;
+      animation: tiltZoomInfinitely 2s linear infinite alternate;
+      border-width: 5px;
+      border-color:orange;
+    }
+
+    /* Increase the bottom margin to space out the cards */
+    .col-md-4 {
+      margin-bottom: 60px;
+    }
+
+    /* Define animation keyframes */
+    @keyframes tiltZoomInfinitely {
+      from {
+        transform: rotate(-.5deg) scale(1);
+      }
+      to {
+        transform: rotate(4deg) scale(1.1);
+      }
+    }
+    
+    
+    
+    
+    .card {
+  transition: transform 0.3s ease-in-out;
+    border: 3px solid black;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
